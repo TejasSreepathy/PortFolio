@@ -25,10 +25,12 @@
                 <i class="ph ph-list"></i>
             </div>
             <nav class="nav-links">
-                <a href="{% url 'about' %}" class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
+                <a href="{% url 'about' %}" class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}">About Me</a>
                 <a href="{% url 'skills' %}" class="nav-link {% if request.resolver_match.url_name == 'skills' %}active{% endif %}">Skills</a>
                 <a href="{% url 'projects' %}" class="nav-link {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
                 <a href="{% url 'education' %}" class="nav-link {% if request.resolver_match.url_name == 'education' %}active{% endif %}">Education</a>
+                <a href="{% url 'certifications' %}" class="nav-link {% if request.resolver_match.url_name == 'certifications' %}active{% endif %}">Certifications</a>
+                <a href="{% url 'achievements' %}" class="nav-link {% if request.resolver_match.url_name == 'achievements' %}active{% endif %}">Achievements</a>
                 <a href="{% url 'contact' %}" class="nav-link btn-hire">Contact Me</a>
             </nav>
         </div>

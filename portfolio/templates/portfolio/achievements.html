@@ -1,0 +1,29 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Achievements - Tejas Sreepathy{% endblock %}
+
+{% block content %}
+<section id="achievements" class="achievements section reveal active">
+    <div class="section-title">
+        <h2>Achievements</h2>
+        <div class="line"></div>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+        <div class="card" style="padding: 1.8rem; display: flex; align-items: flex-start; gap: 15px;">
+            <i class="ph ph-target" style="font-size: 2.2rem; margin-top: 5px; color: #4dc247;"></i>
+            <div style="text-align: left;">
+                <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Solved 100+ Labs</h4>
+                <p style="color: grey; font-size: 0.95rem;">TryHackMe and Hack The Box (Oct '25)</p>
+            </div>
+        </div>
+        <div class="card" style="padding: 1.8rem; display: flex; align-items: flex-start; gap: 15px;">
+            <i class="ph ph-ranking" style="font-size: 2.2rem; margin-top: 5px; color: #4dc247;"></i>
+            <div style="text-align: left;">
+                <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Top 10% Ranking</h4>
+                <p style="color: grey; font-size: 0.95rem;">TryHackMe and Hack The Box (Sep '25)</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

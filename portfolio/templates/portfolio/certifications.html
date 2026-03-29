@@ -1,0 +1,30 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Certifications - Tejas Sreepathy{% endblock %}
+
+{% block content %}
+<section id="certifications" class="certifications section reveal active">
+    <div class="section-title">
+        <h2>Training & Certifications</h2>
+        <div class="line"></div>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+        <div class="card" style="padding: 1.8rem; text-align: left;">
+            <i class="ph ph-certificate" style="font-size: 2rem; margin-bottom: 1rem; color: #4dc247;"></i>
+            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">The Bits and Bytes of Computer Networking</h4>
+            <p style="color: grey; font-size: 0.9rem;">Coursera | Nov '24</p>
+        </div>
+        <div class="card" style="padding: 1.8rem; text-align: left;">
+            <i class="ph ph-certificate" style="font-size: 2rem; margin-bottom: 1rem; color: #4dc247;"></i>
+            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">TCP/IP Advanced Topics</h4>
+            <p style="color: grey; font-size: 0.9rem;">Coursera | Sep '24</p>
+        </div>
+        <div class="card" style="padding: 1.8rem; text-align: left;">
+            <i class="ph ph-certificate" style="font-size: 2rem; margin-bottom: 1rem; color: #4dc247;"></i>
+            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Computer Communications</h4>
+            <p style="color: grey; font-size: 0.9rem;">Coursera | Nov '23</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -15,5 +15,11 @@ def projects(request):
 def education(request):
     return render(request, 'portfolio/education.html')
 
+def certifications(request):
+    return render(request, 'portfolio/certifications.html')
+
+def achievements(request):
+    return render(request, 'portfolio/achievements.html')
+
 def contact(request):
     return render(request, 'portfolio/contact.html')
