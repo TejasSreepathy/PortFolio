@@ -1,0 +1,286 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero section reveal active">
+    <div class="hero-content">
+        <p class="greeting">Hi, my name is</p>
+        <h1 class="name">Tejas Sreepathy.</h1>
+        <h2 class="role">Aspiring Cyber Security Professional</h2>
+        <p class="description">
+            I'm a cybersecurity enthusiast skilled in penetration testing and ethical hacking, focused on identifying vulnerabilities and securing digital systems.
+        </p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="image-wrapper">
+            <img src="{% static 'portfolio/images/profile.jpg' %}" alt="Tejas Sreepathy">
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about section reveal active">
+    <div class="section-title">
+        <h2>About Me</h2>
+        <div class="line"></div>
+    </div>
+    <div class="about-content">
+        <div class="about-text">
+            <p>I am a dedicated cybersecurity enthusiast with a strong interest in penetration testing and ethical hacking. I am passionate about identifying security vulnerabilities and understanding how attackers exploit systems, which allows me to build stronger and more resilient defenses. My approach to learning is highly practical—I regularly engage in hands-on labs, Capture The Flag (CTF) challenges, and real-world simulations to develop and refine my technical skills.</p>
+
+<p>I have a growing foundation in areas such as network security, web application security, vulnerability assessment, and system exploitation. I am familiar with industry-standard tools like Nmap, Wireshark, Metasploit, and Burp Suite, and I continuously explore new tools and techniques to stay updated with the latest cybersecurity trends and threats.
+
+Beyond technical skills.</p>
+        </div>
+        <div class="about-cards">
+            <div class="card about-card">
+            
+                <h3>🛡️ Penetration Testing</h3>
+                <p>Web Application Testing (OWASP Top 10)
+Network Penetration Testing
+Vulnerability Assessment & Exploitation
+Reconnaissance & Enumeration</p>
+            </div>
+            <div class="card about-card">
+                <h3>🌐 Network Security</h3>
+                <p>TCP/IP, DNS, HTTP/HTTPS
+Packet Analysis (Wireshark)
+Firewall & IDS/IPS Concepts
+ARP Spoofing & MITM Detection</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills section reveal active">
+    <div class="section-title">
+        <h2>Technical Skills</h2>
+        <div class="line"></div>
+    </div>
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3>Key Languages</h3>
+            <div class="skill-tags">
+                <span class="tag">Python</span>
+                <span class="tag">C/C++</span>
+                <span class="tag">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Core Tools</h3>
+            <div class="skill-tags">
+                <span class="tag">Linux</span>
+                <span class="tag">Git</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Wireshark</span>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="{% url 'skills' %}" class="btn btn-outline" style="font-size: 1.1rem; padding: 0.8rem 2rem; border-radius: 5px; transition: all 0.3s ease;">Explore All Skills</a>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects section reveal active">
+    <div class="section-title">
+        <h2>Featured Projects</h2>
+        <div class="line"></div>
+    </div>
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="card project-card">
+            <div class="project-header">
+                <i class="ph ph-folder-open"></i>
+                <div class="project-links">
+                    <a href="#" class="project-link" title="GitHub"><i class="ph ph-github-logo"></i></a>
+                </div>
+            </div>
+            <h3 class="project-title">Network Traffic Analyzer</h3>
+            <p class="project-date">Jun '25 – Aug '25</p>
+            <p class="project-desc">A Python-powered packet analysis tool that captures live network flows. Includes an interactive monitoring dashboard and MySQL-backed logging for forensic investigations.</p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Scapy</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="card project-card">
+            <div class="project-header">
+                <i class="ph ph-folder-open"></i>
+                <div class="project-links">
+                    <a href="#" class="project-link" title="GitHub"><i class="ph ph-github-logo"></i></a>
+                </div>
+            </div>
+            <h3 class="project-title">File System Integrity Checker</h3>
+            <p class="project-date">Feb '25 – Apr '25</p>
+            <p class="project-desc">Designed a file system integrity checker to detect unauthorized modifications via cryptographic hashes, with automated scanning and real-time alerts.</p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Linux</span>
+                <span>SQLite</span>
+                <span>HTML</span>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="{% url 'projects' %}" class="btn btn-outline" style="font-size: 1.1rem; padding: 0.8rem 2rem; border-radius: 5px; transition: all 0.3s ease;">Explore More</a>
+    </div>
+</section>
+
+<!-- Training & Certifications Section -->
+<section id="training" class="training section reveal active">
+    <div class="section-title">
+        <h2>Training & Certifications</h2>
+        <div class="line"></div>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+        <div class="card" style="padding: 1.8rem; text-align: left;">
+            <i class="ph ph-certificate" style="font-size: 2rem; margin-bottom: 1rem; color: #4dc247;"></i>
+            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">The Bits and Bytes of Computer Networking</h4>
+            <p style="color: grey; font-size: 0.9rem;">Coursera | Nov '24</p>
+        </div>
+        <div class="card" style="padding: 1.8rem; text-align: left;">
+            <i class="ph ph-certificate" style="font-size: 2rem; margin-bottom: 1rem; color: #4dc247;"></i>
+            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">TCP/IP Advanced Topics</h4>
+            <p style="color: grey; font-size: 0.9rem;">Coursera | Sep '24</p>
+        </div>
+        <div class="card" style="padding: 1.8rem; text-align: left;">
+            <i class="ph ph-certificate" style="font-size: 2rem; margin-bottom: 1rem; color: #4dc247;"></i>
+            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Computer Communications</h4>
+            <p style="color: grey; font-size: 0.9rem;">Coursera | Nov '23</p>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="{% url 'education' %}" class="btn btn-outline" style="font-size: 1.1rem; padding: 0.8rem 2rem; border-radius: 5px; transition: all 0.3s ease;">Explore More</a>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="achievements section reveal active">
+    <div class="section-title">
+        <h2>Achievements</h2>
+        <div class="line"></div>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+        <div class="card" style="padding: 1.8rem; display: flex; align-items: flex-start; gap: 15px;">
+            <i class="ph ph-target" style="font-size: 2.2rem; margin-top: 5px; color: #4dc247;"></i>
+            <div style="text-align: left;">
+                <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Solved 100+ Labs</h4>
+                <p style="color: grey; font-size: 0.95rem;">TryHackMe and Hack The Box (Oct '25)</p>
+            </div>
+        </div>
+        <div class="card" style="padding: 1.8rem; display: flex; align-items: flex-start; gap: 15px;">
+            <i class="ph ph-ranking" style="font-size: 2.2rem; margin-top: 5px; color: #4dc247;"></i>
+            <div style="text-align: left;">
+                <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Top 10% Ranking</h4>
+                <p style="color: grey; font-size: 0.95rem;">TryHackMe and Hack The Box (Sep '25)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education section reveal active">
+    <div class="section-title">
+        <h2>Education</h2>
+        <div class="line"></div>
+    </div>
+    
+    <!-- Education Timeline -->
+    <div class="timeline-container">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>Lovely Professional University</h4>
+                    <h5>B.Tech - Computer Science and Engineering</h5>
+                    <p class="timeline-date">Aug '23 – Present | Punjab, India</p>
+                    <p class="timeline-grade">CGPA: 5.82</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>Oxford PU College</h4>
+                    <h5>Intermediate</h5>
+                    <p class="timeline-date">Jun '22 – May '23 | Bangalore</p>
+                    <p class="timeline-grade">Percentage: 79.6%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>Poorna Prajna Education Centre</h4>
+                    <h5>Matriculation</h5>
+                    <p class="timeline-date">Jun '20 – Mar '21 | Bangalore</p>
+                    <p class="timeline-grade">Percentage: 79%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact section reveal active">
+    <div class="section-title">
+        <h2>Get In Touch</h2>
+        <div class="line"></div>
+    </div>
+    <div class="contact-card card" style="display: flex; flex-wrap: wrap; gap: 3rem; margin-top: 2rem; padding: 2.5rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+        <div class="contact-left" style="flex: 1; min-width: 250px; text-align: left;">
+            <p style="margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.6;">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <div class="contact-info" style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem;">
+                <a href="mailto:tejas3112s@gmail.com" class="contact-item" style="display: flex; align-items: center; gap: 15px; font-size: 1.1rem;">
+                    <i class="ph ph-envelope-simple" style="font-size: 1.8rem; color: #4dc247;"></i>
+                    tejas3112s@gmail.com
+                </a>
+                <a href="tel:+917760030415" class="contact-item" style="display: flex; align-items: center; gap: 15px; font-size: 1.1rem;">
+                    <i class="ph ph-phone" style="font-size: 1.8rem; color: #4dc247;"></i>
+                    +91 7760030415
+                </a>
+            </div>
+            <div class="social-links" style="display: flex; gap: 1rem;">
+                <a href="https://linkedin.com/in/tejas-sreepathy" target="_blank" class="social-btn" style="padding: 12px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.1); display: inline-flex; transition: all 0.3s;"><i class="ph ph-linkedin-logo" style="font-size: 1.5rem;"></i></a>
+                <a href="https://github.com/TejasSreepathy" target="_blank" class="social-btn" style="padding: 12px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.1); display: inline-flex; transition: all 0.3s;"><i class="ph ph-github-logo" style="font-size: 1.5rem;"></i></a>
+            </div>
+        </div>
+        <div class="contact-right" style="flex: 1.2; min-width: 300px;">
+            <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.2rem; text-align: left;">
+                {% csrf_token %}
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 150px;">
+                        <label style="display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 500;">Name</label>
+                        <input type="text" name="name" placeholder="John Doe" style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); color: inherit; font-family: inherit;" required>
+                    </div>
+                    <div style="flex: 1; min-width: 150px;">
+                        <label style="display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 500;">Email</label>
+                        <input type="email" name="email" placeholder="john@example.com" style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); color: inherit; font-family: inherit;" required>
+                    </div>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 500;">Subject</label>
+                    <input type="text" name="subject" placeholder="Project Inquiry" style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); color: inherit; font-family: inherit;" required>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 500;">Message</label>
+                    <textarea name="message" rows="5" placeholder="Hello..." style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); color: inherit; font-family: inherit; resize: vertical;" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; align-self: flex-start; padding: 1rem 2.5rem; border: none; font-size: 1rem; cursor: pointer;">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

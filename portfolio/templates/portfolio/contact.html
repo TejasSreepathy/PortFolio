@@ -1,0 +1,56 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Contact - Tejas Sreepathy{% endblock %}
+
+{% block content %}
+<!-- Contact Section -->
+<section id="contact" class="contact section reveal active">
+    <div class="section-title">
+        <h2>Get In Touch</h2>
+        <div class="line"></div>
+    </div>
+    <div class="contact-card card" style="display: flex; flex-wrap: wrap; gap: 3rem; margin-top: 2rem; padding: 2.5rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+        <div class="contact-left" style="flex: 1; min-width: 250px; text-align: left;">
+            <p style="margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.6;">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <div class="contact-info" style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem;">
+                <a href="mailto:tejas3112s@gmail.com" class="contact-item" style="display: flex; align-items: center; gap: 15px; font-size: 1.1rem;">
+                    <i class="ph ph-envelope-simple" style="font-size: 1.8rem; color: #4dc247;"></i>
+                    tejas3112s@gmail.com
+                </a>
+                <a href="tel:+917760030415" class="contact-item" style="display: flex; align-items: center; gap: 15px; font-size: 1.1rem;">
+                    <i class="ph ph-phone" style="font-size: 1.8rem; color: #4dc247;"></i>
+                    +91 7760030415
+                </a>
+            </div>
+            <div class="social-links" style="display: flex; gap: 1rem;">
+                <a href="https://linkedin.com/in/tejas-sreepathy" target="_blank" class="social-btn" style="padding: 12px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.1); display: inline-flex; transition: all 0.3s;"><i class="ph ph-linkedin-logo" style="font-size: 1.5rem;"></i></a>
+                <a href="https://github.com/TejasSreepathy" target="_blank" class="social-btn" style="padding: 12px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.1); display: inline-flex; transition: all 0.3s;"><i class="ph ph-github-logo" style="font-size: 1.5rem;"></i></a>
+            </div>
+        </div>
+        <div class="contact-right" style="flex: 1.2; min-width: 300px;">
+            <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.2rem; text-align: left;">
+                {% csrf_token %}
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 150px;">
+                        <label style="display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 500;">Name</label>
+                        <input type="text" name="name" placeholder="John Doe" style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); color: inherit; font-family: inherit;" required>
+                    </div>
+                    <div style="flex: 1; min-width: 150px;">
+                        <label style="display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 500;">Email</label>
+                        <input type="email" name="email" placeholder="john@example.com" style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); color: inherit; font-family: inherit;" required>
+                    </div>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 500;">Subject</label>
+                    <input type="text" name="subject" placeholder="Project Inquiry" style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); color: inherit; font-family: inherit;" required>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 500;">Message</label>
+                    <textarea name="message" rows="5" placeholder="Hello..." style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); color: inherit; font-family: inherit; resize: vertical;" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; align-self: flex-start; padding: 1rem 2.5rem; border: none; font-size: 1rem; cursor: pointer;">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

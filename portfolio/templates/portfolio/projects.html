@@ -1,0 +1,52 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Projects - Tejas Sreepathy{% endblock %}
+
+{% block content %}
+<!-- Projects Section -->
+<section id="projects" class="projects section reveal active">
+    <div class="section-title">
+        <h2>Featured Projects</h2>
+        <div class="line"></div>
+    </div>
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="card project-card">
+            <div class="project-header">
+                <i class="ph ph-folder-open"></i>
+                <div class="project-links">
+                    <a href="#" class="project-link" title="GitHub"><i class="ph ph-github-logo"></i></a>
+                </div>
+            </div>
+            <h3 class="project-title">Password Strength Analyzer</h3>
+            <p class="project-date">Jun '25 – Aug '25</p>
+            <p class="project-desc">A cybersecurity tool designed to evaluate the strength of user passwords by analyzing complexity, length, and resistance to common attack techniques such as brute force and dictionary attacks. It helps users create secure passwords by providing real-time feedback and improvement suggestions.</p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Scapy</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="card project-card">
+            <div class="project-header">
+                <i class="ph ph-folder-open"></i>
+                <div class="project-links">
+                    <a href="#" class="project-link" title="GitHub"><i class="ph ph-github-logo"></i></a>
+                </div>
+            </div>
+            <h3 class="project-title">Network Scanner</h3>
+            <p class="project-date">Feb '25 – Apr '25</p>
+            <p class="project-desc">A network scanning tool designed to discover active devices, open ports, and running services within a network. It helps identify potential security risks by mapping the network and detecting exposed services that could be vulnerable to attacks.</p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Linux</span>
+                <span>SQLite</span>
+                <span>HTML</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
