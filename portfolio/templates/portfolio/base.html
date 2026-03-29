@@ -9,7 +9,6 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Styles -->
@@ -20,7 +19,7 @@
     <!-- Header/Nav -->
     <header class="navbar">
         <div class="nav-container">
-            <a href="{% url 'index' %}" class="logo">Tejas<span></span></a>
+            <a href="{% url 'index' %}" class="logo">TEJAS<span>.</span></a>
             <div class="menu-toggle" id="mobile-menu">
                 <i class="ph ph-list"></i>
             </div>
@@ -31,6 +30,7 @@
                 <a href="{% url 'education' %}" class="nav-link {% if request.resolver_match.url_name == 'education' %}active{% endif %}">Education</a>
                 <a href="{% url 'certifications' %}" class="nav-link {% if request.resolver_match.url_name == 'certifications' %}active{% endif %}">Certifications</a>
                 <a href="{% url 'achievements' %}" class="nav-link {% if request.resolver_match.url_name == 'achievements' %}active{% endif %}">Achievements</a>
+                <a href="{% static 'portfolio/cv/tejas_cv_final.pdf' %}" class="nav-link" download>Resume</a>
                 <a href="{% url 'contact' %}" class="nav-link btn-hire">Contact Me</a>
             </nav>
         </div>
